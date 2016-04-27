@@ -62,6 +62,18 @@ body	{
 //@media (min-width: 768px) {
 
 .boxA {
+  article.gaiyou {
+    h1 {
+      margin-top: 0;
+      margin-bottom: 20px;
+      font-size: 36px;
+    }
+    p {
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+  }
+
 //  &:after {
 //    content: "";
 //    display: block;
@@ -356,6 +368,7 @@ body	{
           color: #666666;
           font-size: 12px;
         }
+
       }
     }
   }
