@@ -10,7 +10,7 @@ body	{
   padding-right: 10px;
 }
 
-.top .boxA {
+.top, .boxA {
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -66,8 +66,9 @@ body	{
 
 //@media (min-width: 768px) {
 
-.boxA {
+.boxA{
   article.gaiyou {
+    margin-bottom: 20px;
     a {
       display: block;
       border: solid 1px #dddddd;
@@ -466,6 +467,34 @@ body	{
   }
 }
 
+@media (min-width: 600px) {
+  .boxA-1 {
+    &:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+    .gaiyou {
+      float: left;
+      width: 50%;
+    }
+    .gaiyou {
+      &:nth-child(odd) {
+        padding-right: 15px;
+        .moz-box-sizing: border-box;
+        .webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        clear: both;
+      }
+      &:nth-child(even) {
+        padding-left: 15px;
+        .moz-box-sizing: border-box;
+        .webkit-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+    }
+  }
+}
 @media (min-width: 600px) and (max-width:767px){
   .box4 {
     &:after {
@@ -499,6 +528,9 @@ body	{
 }
 
 @media (min-width: 768px) {
+  .pickup h1 {
+    font-size: 30px;
+  }
   .boxA {
     &:after {
       content: "";
