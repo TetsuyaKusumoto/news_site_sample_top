@@ -464,6 +464,33 @@ body	{
   }
 }
 
+.badge {
+  width: 120px;
+  height: 120px;
+  padding-top: 25px;
+  .moz-box-sizing: border-box;
+  .webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 60px;
+  background-color: #00a0e9;
+  color: #ffffff;
+  text-align: center;
+  box-shadow: 0 0 4px #aaaaaa;
+  i {
+    display: block;
+    font-size: 40px;
+  }
+}
+
+.pickup {
+  position: relative;
+}
+
+.badge {
+  position: absolute;
+  top: 44%;
+  right: -15px;
+}
 
 @media (max-width: 599px) {
   .box1 {
@@ -505,6 +532,16 @@ body	{
         }
       }
     }
+  }
+  .badge {
+    -ms-transform: scale(0.5);
+    -ms-transform-origin: right top;
+    -webkit-transform: scale(0.5);
+    -webkit-transform-origin: right top;
+    transform: scale(0.5);
+    transform-origin: right top;
+    top: -8px;
+    right: 10px;
   }
 }
 
@@ -566,6 +603,10 @@ body	{
     }
   }
 
+  .badge {
+    top: 30%;
+    right: 15px;
+  }
 }
 
 @media (min-width: 768px) {
