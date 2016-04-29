@@ -110,6 +110,8 @@ body	{
     }
   }
 
+
+
 //  &:after {
 //    content: "";
 //    display: block;
@@ -411,6 +413,45 @@ body	{
 }
 
 //}
+.pagination {
+  text-align: center;
+}
+
+.pagination ul {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pagination li a {
+  display: block;
+  margin-left: 5px;
+  margin: 5px;
+  padding: 5px 10px;
+  border: solid 1px #aaaaaa;
+  color: #000000;
+  font-size: 14px;
+  text-decoration: none;
+  &.active {
+    background-color: #cccccc;
+  }
+  &:hover {
+    background-color: #eeeeee;
+  }
+}
+
+.pagination ul {
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  li {
+    float: left;
+    width: auto;
+  }
+}
 
 .box5 {
   border-top: solid 1px #dddddd;
